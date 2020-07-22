@@ -24,4 +24,14 @@ public class TestController {
         System.out.println("执行了请求");
         return "Hello World";
     }
+    /**
+     * 用来测试请求
+     * @return
+     */
+    @GetMapping({"/update"})
+    public String updateTest() {
+        System.out.println("执行了请求");
+        return "update";
+    }
+
 }
